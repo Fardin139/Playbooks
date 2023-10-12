@@ -1,0 +1,15 @@
+---
+ - name: creates users
+   hosts: EE1.hsilab.com
+   become: false
+   vars:
+    - name:
+       - ram
+       - sita
+   tasks:
+    - name: create user
+      user:
+       name: "{{ item }}"
+       state: present
+       password: Hitachi@123
+
