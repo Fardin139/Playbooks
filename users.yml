@@ -1,6 +1,6 @@
 ---
  - name: creates users
-   hosts: EE1.hsilab.com
+   hosts: ee1.hsilab.com
    become: false
    vars:
     - name:
